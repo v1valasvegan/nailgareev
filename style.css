@@ -118,7 +118,7 @@
 }
 
 .practice::before {
-    left: 62px;
+    left: 14%;
     height: 234px;
     background-image: url('./img/vertical_line2.jpg');
 }
@@ -173,6 +173,30 @@
 .fab {
     color: #698A99;
 }
+
+@media (max-width: 900px) {
+    .container {
+        grid-template-rows: min-content auto 38px;
+        background-size: 900px;
+        height: 636px;
+    }
+
+    .nav {
+        padding-top: 70px;
+    }
+
+    .heading {
+        font-size: 30px;
+    }
+
+    .practice::before {
+        left: 8%;
+    }
+
+    .practice {
+        padding-left: calc(8% + 12px);
+    }
+} 
 
 
 
